@@ -1,0 +1,26 @@
+
+* Ruby version : 2.3.0
+
+* Configuration
+
+<tt> git clone repo  </tt>
+
+<tt>  cd full-text-search </tt>
+
+<tt> bundle  </tt>
+
+* Database creation
+
+Copy database.yml.example file to database.yml and update username password for postgresql then run following commands
+
+<tt> rake db:create  </tt>
+
+<tt> rake db:migrate  </tt>
+
+<tt> rake db:seed </tt>
+
+* How to run the test suite
+
+<tt> bundle exec rsec spec  </tt>
+
+* Check live on http://fulltext-search.herokuapp.com

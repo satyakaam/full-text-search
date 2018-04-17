@@ -1,0 +1,10 @@
+<%= bootstrap_form_for @document do |f| %>
+
+  <%= f.text_area :description %>
+
+  <div class="form-group">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")), documents_path, :class => 'btn btn-default' %>
+  </div>
+  
+<% end %>

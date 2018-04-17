@@ -1,0 +1,9 @@
+<%- model_class = Document -%>
+<thead>
+  <tr>
+    <th><%= model_class.human_attribute_name(:description) %></th>
+  </tr>
+</thead>
+<tbody>
+  <%= render partial: 'document', collection: documents %>
+</tbody>
